@@ -1,7 +1,12 @@
 import React from 'react';
 
 export default function Star() {
-  const shadows1 = Array.from(new Array(2000), () => {
+  const shadows = Array.from(new Array(1000), () => {
+    const left = `${Math.floor(Math.random() * 2000)}px`;
+    const top = `${Math.floor(Math.random() * 1000)}px`;
+    return `${left} ${top} #fff`;
+  });
+  const shadows1 = Array.from(new Array(1500), () => {
     const left = `${Math.floor(Math.random() * 2000)}px`;
     const top = `${Math.floor(Math.random() * 1000)}px`;
     return `${left} ${top} #fff`;
@@ -11,7 +16,7 @@ export default function Star() {
     const top = `${Math.floor(Math.random() * 1000)}px`;
     return `${left} ${top} #fff`;
   });
-  const shadows3 = Array.from(new Array(1000), () => {
+  const shadows3 = Array.from(new Array(500), () => {
     const left = `${Math.floor(Math.random() * 2000)}px`;
     const top = `${Math.floor(Math.random() * 1000)}px`;
     return `${left} ${top} #fff`;
@@ -19,9 +24,16 @@ export default function Star() {
   return (
     <div className="relative h-full overflow-hidden">
       <div
-        className="absolute w-[1px] h-[1px] bg-white rounded-full animate-[star_30s_linear_infinite]"
+        className="absolute w-[1px] h-[1px] bg-white rounded-full animate-[star_10s_linear_infinite]"
         style={{
           bottom: 0,
+          boxShadow: shadows.join(',')
+        }}
+      />
+      <div
+        className="absolute w-[1.5px] h-[1.5px] bg-white rounded-full animate-[star_30s_linear_infinite]"
+        style={{
+          bottom: '20px',
           boxShadow: shadows1.join(',')
         }}
       />
@@ -33,7 +45,7 @@ export default function Star() {
         }}
       />
       <div
-        className="absolute w-[3px] h-[3px] bg-white rounded-full animate-[star_150s_linear_infinite]"
+        className="absolute w-[3px] h-[3px] bg-white rounded-full animate-[star_200s_linear_infinite]"
         style={{
           boxShadow: shadows3.join(',')
         }}

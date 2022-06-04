@@ -58,7 +58,7 @@ export default function Star() {
   ];
 
   return (
-    <div className="relative h-full overflow-hidden">
+    <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
       {stars.map((star, idx) => (
         <div
           key={idx}

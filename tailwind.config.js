@@ -2,6 +2,13 @@ module.exports = {
   content: ['./src/**/*.{html,js,ts,tsx}'],
   theme: {
     extend: {
+      screens: {
+        over0Px: '0px',
+        over360Px: '360px',
+        over480Px: '480px',
+        over640px: '640px',
+        over1024px: '1024px'
+      },
       keyframes: {
         star: {
           '0%': { transform: 'translate(0px, 0px)' },

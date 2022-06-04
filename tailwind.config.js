@@ -12,13 +12,13 @@ module.exports = {
       keyframes: {
         star: {
           '0%': { transform: 'translate(0px, 0px)' },
-          '50%': { transform: 'translate(-700px, -2000px)' },
+          '50%': { transform: 'translate(500px, -2000px)' },
           '100%': { transform: 'translate(0px, 0px)' }
         },
         starReverse: {
-          '0%': { transform: 'translate(-700px, -2000px)' },
+          '0%': { transform: 'translate(-500px, -2000px)' },
           '50%': { transform: 'translate(0px, 0px)' },
-          '100%': { transform: 'translate(-700px, -2000px)' }
+          '100%': { transform: 'translate(-500px, -2000px)' }
         }
       },
       animation: {

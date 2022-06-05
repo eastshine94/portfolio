@@ -7,7 +7,11 @@ module.exports = {
         over360Px: '360px',
         over480Px: '480px',
         over640px: '640px',
+        over800px: '800px',
         over1024px: '1024px'
+      },
+      backgroundImage: {
+        hdkimLogo: "url('../public/assets/hdkim-logo.png')"
       },
       keyframes: {
         star: {

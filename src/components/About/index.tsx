@@ -19,7 +19,7 @@ export default function About() {
           <div
             className="hidden absolute top-32 left-10 w-[125px] h-[125px] 
             mr-10 bg-hdkimLogo bg-no-repeat bg-contain
-            over800px:block over1024px:static over1024px:w-[350px] over1024px:h-[400px]"
+            over800px:block over1024px:static over1024px:min-w-[300px] over1024px:h-[300px]"
           />
 
           <Intro />

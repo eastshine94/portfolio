@@ -8,7 +8,8 @@ module.exports = {
         over480Px: '480px',
         over640px: '640px',
         over800px: '800px',
-        over1024px: '1024px'
+        over1024px: '1024px',
+        over1200px: '1200px'
       },
       backgroundImage: {
         hdkimLogo: "url('../public/assets/hdkim-logo.png')"

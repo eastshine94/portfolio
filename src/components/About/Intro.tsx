@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Content() {
+export default function Intro() {
   const myInfoList = [
     {
       title: '✉️ Email',
@@ -19,7 +19,7 @@ export default function Content() {
     }
   ];
   return (
-    <div>
+    <div className="mb-8">
       <div className="mb-8 over800px:pl-[140px] over1024px:p-0">
         <table className="border-collapse border border-slate-400">
           <tbody>

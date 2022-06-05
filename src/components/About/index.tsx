@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from '../Title';
-import Content from './Content';
+import Intro from './Intro';
+import Skills from './Skills';
 
 export default function About() {
   return (
@@ -21,8 +22,9 @@ export default function About() {
             over800px:block over1024px:static over1024px:w-[350px] over1024px:h-[400px]"
           />
 
-          <Content />
+          <Intro />
         </div>
+        <Skills />
       </div>
     </section>
   );

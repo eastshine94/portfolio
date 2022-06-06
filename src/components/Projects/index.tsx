@@ -1,7 +1,8 @@
 import React from 'react';
 import Title from '../Title';
-import Kakao from './Kakao';
 import ProjectItem, { ProjectItemProps } from './ProjectItem';
+import Kakao from './Kakao';
+import Pokemon from './Pokemon';
 import Responsive from './Responsive';
 
 export default function Projects() {
@@ -18,6 +19,13 @@ export default function Projects() {
       period: ['2020.05', '2020.05'],
       isAlwaysFullImage: true,
       Content: Responsive
+    },
+    {
+      name: 'Pokemon Web Page',
+      image: '/assets/pokemon.png',
+      period: ['2020.03', '2020.05'],
+      isAlwaysFullImage: true,
+      Content: Pokemon
     }
   ];
   return (

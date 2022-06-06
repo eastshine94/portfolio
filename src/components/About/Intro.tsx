@@ -25,11 +25,11 @@ export default function Intro() {
           <tbody>
             {myInfoList.map((info, idx) => (
               <tr key={idx}>
-                <td className="min-w-[110px] py-2 px-2 border border-slate-400 bg-amber-200 font-bold over480Px:px-4">
+                <td className="min-w-[110px] py-2 px-2 border border-slate-400 bg-amber-200 font-bold over480px:px-4">
                   {info.title}
                 </td>
 
-                <td className="p-2 break-all border border-slate-400  text-sky-900 text-sm underline over480Px:text-base">
+                <td className="p-2 break-all border border-slate-400  text-sky-900 text-sm underline over480px:text-base">
                   {info.link ? (
                     <a href={info.link} target="_blank" rel="noreferrer">
                       {info.content}
@@ -44,7 +44,7 @@ export default function Intro() {
         </table>
       </div>
       <div>
-        <div className="mb-5 text-[20px] font-bold over480Px:text-[32px]">
+        <div className="mb-5 text-[20px] font-bold over480px:text-[32px]">
           ✿ Front-End Developer
         </div>
         <div className="tracking-wide leading-relaxed">

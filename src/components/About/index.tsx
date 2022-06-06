@@ -10,9 +10,9 @@ export default function About() {
 
       <div
         className="relative max-w-[1200px] p-6 mx-auto mt-16 
-         box-content rounded-xl bg-white over480Px:p-12"
+         box-content rounded-xl bg-white over480px:p-12"
       >
-        <div className="w-full mb-5 text-[24px] font-bold over480Px:text-[40px]">
+        <div className="w-full mb-5 text-[24px] font-bold over480px:text-[40px]">
           김희동 (HD Kim){' '}
         </div>
         <div className="flex flex-wrap gap-4 justify-start items-center over1024px:flex-nowrap">

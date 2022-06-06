@@ -35,10 +35,10 @@ export default function Skills() {
   ];
   return (
     <div className="pt-5 border-t border-slate-300">
-      <div className="mb-4 text-[20px] font-bold over480Px:text-[32px]">
+      <div className="mb-4 text-[20px] font-bold over480px:text-[32px]">
         ⚔️ 기술 스택
       </div>
-      <div className="grid grid-cols-1 over480Px:grid-cols-2 over800px:grid-cols-3 over1200px:flex over1200px:justify-between">
+      <div className="grid grid-cols-1 over480px:grid-cols-2 over800px:grid-cols-3 over1200px:flex over1200px:justify-between">
         {skillList.map((value, idx) => (
           <div key={idx}>
             {value.title ? (
@@ -46,7 +46,7 @@ export default function Skills() {
                 {value.title}
               </h3>
             ) : (
-              <div className="over480Px:mb-10" />
+              <div className="over480px:mb-10" />
             )}
 
             <ul>

@@ -30,7 +30,7 @@ export default function CareerItem({
   return (
     <div
       className="relative max-w-[1200px] p-6 mx-auto mt-16 
-         box-content rounded-xl bg-white over480Px:p-12
+         box-content rounded-xl bg-white over480px:p-12
          over1024px:flex
          "
     >

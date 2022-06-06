@@ -1,15 +1,39 @@
 import React from 'react';
+import { ContentProps } from '.';
 
-export default function Kakao() {
+export default function Kakao({ readme, site }: ContentProps) {
   return (
     <div className="leading-loose over1024px:pl-20">
-      <div className="my-4">
+      <div className="my-2">
         <b>Socket.io</b>를 활용하여 카카오톡의 <b>실시간 채팅 기능</b>을
         구현하기 위한 프로젝트입니다. <b>실시간 양방향 통신</b>이 가능한 어떤
         기능을 만들어보고 싶었습니다. 가장 먼저 생각난 것은 채팅이었고, 그래서
         가장 일상적으로 사용하고 있는 카카오톡 채팅 기능을 구현해보자는 마음으로
         이 프로젝트를 진행하였습니다.
       </div>
+      <div className="mb-4">
+        {readme && (
+          <a
+            href={readme}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block mr-3 py-1 px-2 bg-black text-white font-bold rounded-md"
+          >
+            README
+          </a>
+        )}
+        {site && (
+          <a
+            href={site}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block py-1 px-2 bg-pink-800 text-white font-bold rounded-md"
+          >
+            테스트 사이트
+          </a>
+        )}
+      </div>
+
       <div>
         <div className="text-[18px] font-bold">주요 기술</div>
         <div className="pb-5">

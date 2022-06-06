@@ -1,9 +1,10 @@
 import React from 'react';
+import { ContentProps } from '.';
 
-export default function Responsive() {
+export default function Responsive({ readme, site }: ContentProps) {
   return (
     <div className="leading-loose over1024px:pl-20">
-      <div className="my-4">
+      <div className="my-2">
         이전 프로젝트에서 CSS 지식이 부족하여, 많은 어려움을 겪었습니다. 그래서
         CSS에 대한 지식도 쌓고자{' '}
         <a
@@ -17,6 +18,28 @@ export default function Responsive() {
         의 강의를 따라하며 반응형 웹 사이트를 제작해보았습니다. 해당 강의는
         HTML, CSS를 사용하지만, 저는 <b>React와 styled-components</b>로 해당
         페이지를 구현해봤습니다.
+      </div>
+      <div className="mb-4">
+        {readme && (
+          <a
+            href={readme}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block mr-3 py-1 px-2 bg-black text-white font-bold rounded-md"
+          >
+            README
+          </a>
+        )}
+        {site && (
+          <a
+            href={site}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block py-1 px-2 bg-pink-800 text-white font-bold rounded-md"
+          >
+            테스트 사이트
+          </a>
+        )}
       </div>
       <div>
         <div className="text-[18px] font-bold">주요 내용</div>

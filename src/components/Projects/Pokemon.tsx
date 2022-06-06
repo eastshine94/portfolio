@@ -1,9 +1,10 @@
 import React from 'react';
+import { ContentProps } from '.';
 
-export default function Pokemon() {
+export default function Pokemon({ readme, site }: ContentProps) {
   return (
     <div className="leading-loose over1024px:pl-20">
-      <div className="my-4">
+      <div className="my-2">
         <b>Open API</b>를 활용하여 프로젝트를 진행해보려 했습니다. 그러다 발견한
         것이{' '}
         <a
@@ -22,6 +23,28 @@ export default function Pokemon() {
         구현해봄으로써 API가 어떻게 구성되는 지 이해할 수 있었고, 해당 API를
         프론트엔드에서 어떻게 호출하며, 이를 활용하여 서비스는 어떻게 만들 수
         있는 지 알 수 있었습니다.
+      </div>
+      <div className="mb-4">
+        {readme && (
+          <a
+            href={readme}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block mr-3 py-1 px-2 bg-black text-white font-bold rounded-md"
+          >
+            README
+          </a>
+        )}
+        {site && (
+          <a
+            href={site}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block py-1 px-2 bg-pink-800 text-white font-bold rounded-md"
+          >
+            테스트 사이트
+          </a>
+        )}
       </div>
       <div className="mb-5">
         <div className="text-[18px] font-bold">주요 기술</div>

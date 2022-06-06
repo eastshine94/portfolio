@@ -2,6 +2,12 @@ import React from 'react';
 import Star from './Star';
 
 export default function MainTop() {
+  const handleMoreBtnClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    const findElement = document.querySelector('#about') as HTMLDivElement;
+    if (!findElement) return;
+    window.scrollTo(0, Number(findElement.offsetTop));
+  };
   return (
     <section className="w-full h-screen bg-black relative">
       <div className="w-full h-full">
@@ -17,7 +23,11 @@ export default function MainTop() {
               Front-End <br /> Developer
             </p>
             <p className="text-3xl mb-6 over480px:text-4xl"> 김 희 동 </p>
-            <button className="px-4 py-2 bg-neutral-900 border border-stone-800 rounded-xl over360px:text-2xl">
+            <button
+              className="px-4 py-2 bg-neutral-900 border border-stone-800 
+            rounded-xl over360px:text-2xl"
+              onClick={handleMoreBtnClick}
+            >
               Who am I?
             </button>
           </div>

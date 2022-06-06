@@ -5,7 +5,10 @@ import Skills from './Skills';
 
 export default function About() {
   return (
-    <section className="p-5 bg-gradient-to-t to-slate-900 from-blue-700 over640px:p-20">
+    <section
+      id="about"
+      className="p-5 bg-gradient-to-t to-neutral-900 from-sky-900 over640px:p-20"
+    >
       <Title title="About me" />
 
       <div

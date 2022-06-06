@@ -9,7 +9,7 @@ export default function Career() {
       company: '(주) 조아라',
       period: ['20201216', undefined],
       job: '서비스개발팀 프론트엔드 개발자',
-      logo: '/assets/joara.png',
+      logo: 'assets/joara.png',
       link: 'https://www.joara.com/',
       Content: Joara
     }

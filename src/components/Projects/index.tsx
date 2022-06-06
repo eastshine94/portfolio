@@ -14,7 +14,7 @@ export default function Projects() {
   const projectList: ProjectItemProps[] = [
     {
       name: 'KakaoTalk Clone',
-      image: '/assets/kakao.png',
+      image: 'assets/kakao.png',
       period: ['2020.07', '2020.10'],
       Content: () => (
         <Kakao
@@ -25,7 +25,7 @@ export default function Projects() {
     },
     {
       name: 'Responsive Web',
-      image: '/assets/responsive.png',
+      image: 'assets/responsive.png',
       period: ['2020.05', '2020.05'],
       isAlwaysFullImage: true,
       Content: () => (
@@ -37,7 +37,7 @@ export default function Projects() {
     },
     {
       name: 'Pokemon Web Page',
-      image: '/assets/pokemon.png',
+      image: 'assets/pokemon.png',
       period: ['2020.03', '2020.05'],
       isAlwaysFullImage: true,
       Content: () => (

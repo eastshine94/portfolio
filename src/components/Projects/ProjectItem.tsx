@@ -33,7 +33,7 @@ export default function ProjectItem({
               className="block w-full h-full m-auto over640px:w-1/2 over1024px:w-full"
               src={image}
               style={isAlwaysFullImage ? { width: '100%' } : {}}
-              alt="kakao"
+              alt="project"
             />
           </div>
           <Content />

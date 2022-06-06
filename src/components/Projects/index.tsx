@@ -1,14 +1,21 @@
 import React from 'react';
 import Title from '../Title';
 import Kakao from './Kakao';
-import ProjectItem from './ProjectItem';
+import ProjectItem, { ProjectItemProps } from './ProjectItem';
+import Responsive from './Responsive';
 
 export default function Projects() {
-  const projectList = [
+  const projectList: ProjectItemProps[] = [
     {
       name: 'KakaoTalk Clone',
       image: '/assets/kakao.png',
       Content: Kakao
+    },
+    {
+      name: 'Responsive Web',
+      image: '/assets/responsive.png',
+      isAlwaysFullImage: true,
+      Content: Responsive
     }
   ];
   return (

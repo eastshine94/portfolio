@@ -3,7 +3,6 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        over0Px: '0px',
         over360Px: '360px',
         over480Px: '480px',
         over640px: '640px',

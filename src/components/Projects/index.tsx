@@ -9,11 +9,13 @@ export default function Projects() {
     {
       name: 'KakaoTalk Clone',
       image: '/assets/kakao.png',
+      period: ['2020.07', '2020.10'],
       Content: Kakao
     },
     {
       name: 'Responsive Web',
       image: '/assets/responsive.png',
+      period: ['2020.05', '2020.05'],
       isAlwaysFullImage: true,
       Content: Responsive
     }

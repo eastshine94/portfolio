@@ -3,6 +3,7 @@ import React from 'react';
 export interface ProjectItemProps {
   name: string;
   image: string;
+  period: string[];
   isAlwaysFullImage?: boolean;
   Content: () => JSX.Element;
 }
@@ -10,6 +11,7 @@ export interface ProjectItemProps {
 export default function ProjectItem({
   name,
   image,
+  period,
   isAlwaysFullImage = false,
   Content
 }: ProjectItemProps) {
@@ -19,9 +21,12 @@ export default function ProjectItem({
          box-content rounded-xl bg-white over480px:p-12"
     >
       <div>
-        <h3 className="pb-5 text-center text-[28px] font-extrabold text-[#3c78d8] over1024px:text-[32px]">
+        <h3 className="text-center text-[28px] font-extrabold text-[#3c78d8] over1024px:text-[32px]">
           {name}
         </h3>
+        <div className="pb-7 text-center text-[20px] font-extrabold text-stone-400 over1024px:text-[24px]">
+          {`${period[0] || ''} ~ ${period[1] || ''}`}
+        </div>
         <div className="over1024px:flex over1024px:items-center">
           <div className="w-full h-[500px] bg-slate-200 over1024px:min-w-[300px]">
             <img

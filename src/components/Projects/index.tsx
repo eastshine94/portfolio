@@ -49,7 +49,11 @@ export default function Projects() {
     }
   ];
   return (
-    <section className="p-5 bg-stone-500 over640px:p-20">
+    <section
+      id="projects"
+      className="px-5 pb-5 pt-24 bg-stone-500
+    over800px:p-20 over800px:pt-24"
+    >
       <Title title="Projects" />
       {projectList.map(value => (
         <ProjectItem {...value} key={value.name} />

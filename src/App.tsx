@@ -2,14 +2,14 @@ import React from 'react';
 import About from './components/About';
 import Career from './components/Career';
 import Footer from './components/Footer';
-// import Gnb from './components/Gnb';
+import Gnb from './components/Gnb';
 import MainTop from './components/MainTop';
 import Projects from './components/Projects';
 
 function App() {
   return (
     <div>
-      {/* <Gnb /> */}
+      <Gnb />
       <main>
         <MainTop />
         <About />

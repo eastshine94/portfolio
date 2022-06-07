@@ -28,7 +28,7 @@ export default function ProjectItem({
           {`${period[0] || ''} ~ ${period[1] || ''}`}
         </div>
         <div className="over1024px:flex over1024px:items-center">
-          <div className="w-full h-[500px] bg-slate-200 over1024px:max-w-[350px] over1024px:min-w-[350px]">
+          <div className="mb-12 w-full h-[500px] bg-slate-200 over1024px:max-w-[350px] over1024px:min-w-[350px] over1024px:mb-0">
             <img
               className="block w-full h-full m-auto over640px:w-1/2 over1024px:w-full"
               src={image}

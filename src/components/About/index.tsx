@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="p-5 bg-gradient-to-t to-neutral-900 from-sky-900 over640px:p-20"
+      className="px-5 pb-5 pt-24 bg-gradient-to-t to-neutral-900 from-sky-900 over800px:p-20 over800px:pt-24"
     >
       <Title title="About me" />
 

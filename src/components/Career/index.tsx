@@ -17,7 +17,11 @@ export default function Career() {
   ];
 
   return (
-    <section className="p-5 bg-gradient-to-t to-green-800 from-emerald-400 over640px:p-20">
+    <section
+      id="career"
+      className="px-5 pb-5 pt-24 bg-gradient-to-t to-green-800 from-emerald-400
+       over800px:p-20 over800px:pt-24"
+    >
       <Title title="Career" />
       {careerList.map(value => (
         <CareerItem {...value} key={value.company} />

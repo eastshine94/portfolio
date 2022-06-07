@@ -9,8 +9,9 @@ export default function MainTop() {
     if (!findElement) return;
     window.scrollTo(0, Number(findElement.offsetTop));
   };
+
   return (
-    <section className="w-full h-screen bg-black relative">
+    <section className="w-full h-screen bg-black relative z-50">
       <div className="w-full h-full">
         <div className="flex items-center w-full h-full text-white text-center z-10">
           <img

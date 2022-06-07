@@ -11,7 +11,7 @@ module.exports = {
         over1200px: '1200px'
       },
       backgroundImage: {
-        hdkimLogo: "url('../public/assets/hdkim-logo.png')"
+        hdkimLogo: "url('../src/assets/hdkim-logo.png')"
       },
       keyframes: {
         star: {

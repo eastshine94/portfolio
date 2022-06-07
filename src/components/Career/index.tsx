@@ -2,6 +2,7 @@ import React from 'react';
 import Title from '../Base/Title';
 import CareerItem from './CareerItem';
 import Joara from './Joara';
+import joaraLogo from 'assets/joara.png';
 
 export default function Career() {
   const careerList = [
@@ -9,7 +10,7 @@ export default function Career() {
       company: '(주) 조아라',
       period: ['20201216', undefined],
       job: '서비스개발팀 프론트엔드 개발자',
-      logo: 'assets/joara.png',
+      logo: joaraLogo,
       link: 'https://www.joara.com/',
       Content: Joara
     }

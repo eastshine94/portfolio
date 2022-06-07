@@ -1,5 +1,6 @@
 import React from 'react';
 import Star from './Star';
+import moonImg from 'assets/moon.png';
 
 export default function MainTop() {
   const handleMoreBtnClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -14,7 +15,7 @@ export default function MainTop() {
         <div className="flex items-center w-full h-full text-white text-center z-10">
           <img
             className="absolute block inset-0 m-auto  w-[800px] opacity-50"
-            src="assets/moon.png"
+            src={moonImg}
             alt="moon"
           />
 

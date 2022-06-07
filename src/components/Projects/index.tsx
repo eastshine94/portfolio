@@ -4,6 +4,9 @@ import ProjectItem, { ProjectItemProps } from './ProjectItem';
 import Kakao from './Kakao';
 import Pokemon from './Pokemon';
 import Responsive from './Responsive';
+import kakaoImg from 'assets/kakao.png';
+import responsiveImg from 'assets/responsive.png';
+import pokemonImg from 'assets/pokemon.png';
 
 export interface ContentProps {
   readme?: string;
@@ -14,7 +17,7 @@ export default function Projects() {
   const projectList: ProjectItemProps[] = [
     {
       name: 'KakaoTalk Clone',
-      image: 'assets/kakao.png',
+      image: kakaoImg,
       period: ['2020.07', '2020.10'],
       Content: () => (
         <Kakao
@@ -25,7 +28,7 @@ export default function Projects() {
     },
     {
       name: 'Responsive Web',
-      image: 'assets/responsive.png',
+      image: responsiveImg,
       period: ['2020.05', '2020.05'],
       isAlwaysFullImage: true,
       Content: () => (
@@ -37,7 +40,7 @@ export default function Projects() {
     },
     {
       name: 'Pokemon Web Page',
-      image: 'assets/pokemon.png',
+      image: pokemonImg,
       period: ['2020.03', '2020.05'],
       isAlwaysFullImage: true,
       Content: () => (

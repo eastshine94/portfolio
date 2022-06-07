@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from '../Title';
+import Title from '../Base/Title';
 import CareerItem from './CareerItem';
 import Joara from './Joara';
 

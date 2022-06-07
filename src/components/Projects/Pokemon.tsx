@@ -42,7 +42,7 @@ export default function Pokemon({ readme, site }: ContentProps) {
             rel="noreferrer"
             className="inline-block py-1 px-2 bg-pink-800 text-white font-bold rounded-md"
           >
-            테스트 사이트
+            TEST
           </a>
         )}
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from '../Title';
+import Title from '../Base/Title';
 import Intro from './Intro';
 import Skills from './Skills';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from '../Title';
+import Title from '../Base/Title';
 import ProjectItem, { ProjectItemProps } from './ProjectItem';
 import Kakao from './Kakao';
 import Pokemon from './Pokemon';

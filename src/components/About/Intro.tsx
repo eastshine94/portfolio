@@ -66,11 +66,6 @@ export default function Intro() {
           </div>
 
           <div className="pb-4">
-            <span className="font-bold">애자일 방법론</span>에 따라 프로젝트를
-            진행하는 데 익숙합니다.
-          </div>
-
-          <div className="pb-4">
             새로운 <span className="font-bold">기술을 학습</span>하고,{' '}
             <span className="font-bold">사용</span>하는 데{' '}
             <span className="font-bold">거부감이 없습니다.</span>

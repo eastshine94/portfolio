@@ -53,6 +53,9 @@ export default function Gnb() {
       }
     };
     window.addEventListener('resize', handleResizeWindow);
+    return () => {
+      window.removeEventListener('resize', handleResizeWindow);
+    };
   }, []);
 
   return (

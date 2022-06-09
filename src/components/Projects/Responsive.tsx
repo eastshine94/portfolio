@@ -16,8 +16,13 @@ export default function Responsive({ readme, site }: ContentProps) {
           https://wtss.tistory.com/
         </a>
         의 강의를 따라하며 반응형 웹 사이트를 제작해보았습니다. 해당 강의는
-        HTML, CSS를 사용하지만, 저는 <b>React와 styled-components</b>로 해당
-        페이지를 구현해봤습니다.
+        HTML, CSS를 사용하지만, 저는 <strong>React와 styled-components</strong>
+        로 해당 페이지를 구현해봤습니다.
+        <br />이 프로젝트를 진행하면서, <strong>media query</strong>에 대해 알게
+        되었고, 다양한 CSS를 사용해보며, 어떤 속성값을 주면 화면이 어떻게
+        구성될지에 대해 알 수 있었습니다. 최종적으로 이를 활용하여{' '}
+        <strong>반응형 웹페이지</strong>를 어떻게 만들 수 있는지 이해하게
+        되었습니다.
       </div>
       <div className="mb-4">
         {readme && (
@@ -37,7 +42,7 @@ export default function Responsive({ readme, site }: ContentProps) {
             rel="noreferrer"
             className="inline-block py-1 px-2 bg-pink-800 text-white font-bold rounded-md"
           >
-            TEST
+            DEMO
           </a>
         )}
       </div>
@@ -46,14 +51,15 @@ export default function Responsive({ readme, site }: ContentProps) {
         <div>
           <ul className="list-inside list-disc">
             <li>
-              <b>React, styled component</b>를 사용하여 반응형 웹 제작
+              <strong>React, styled component</strong>를 사용하여 반응형 웹 제작
             </li>
             <li>
-              CSS3에서 제공하는 <b>box-shadow, transform, transition, filter</b>{' '}
-              등을 이용하여 다양한 마우스 오버 효과를 구현
+              CSS3에서 제공하는{' '}
+              <strong>box-shadow, transform, transition, filter</strong> 등을
+              이용하여 다양한 마우스 오버 효과를 구현
             </li>
             <li>
-              <b>react-slick</b>을 사용하여, slick slider 구현
+              <strong>react-slick</strong>을 사용하여, slick slider 구현
             </li>
             <li>페이스북, 트위터 공유 기능</li>
           </ul>

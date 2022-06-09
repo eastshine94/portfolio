@@ -60,8 +60,8 @@ export default function Gnb() {
 
   return (
     <header
-      className="fixed top-0 z-40 w-full py-4 px-20
-      bg-white  border-b-2 border-stone-200"
+      className="fixed top-0 z-40 w-full py-4 px-10
+      bg-white  border-b-2 border-stone-200 over800px:px-20"
     >
       <div className="relative mx-auto max-w-[1200px] over800px:flex over800px:justify-between">
         <div className="text-[24px] font-bold ">

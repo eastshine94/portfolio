@@ -14,6 +14,11 @@ module.exports = {
         hdkimLogo: "url('../src/assets/hdkim-logo.png')"
       },
       keyframes: {
+        move: {
+          '0%': { transform: 'translateY(0px)', color: 'white' },
+          '50%': { transform: 'translateY(15px)', color: '#c4c4c4' },
+          '100%': { transform: 'translateY(0px)', color: 'white' }
+        },
         star: {
           '0%': { transform: 'translate(0px, 0px)' },
           '50%': { transform: 'translate(500px, -2000px)' },
@@ -26,6 +31,7 @@ module.exports = {
         }
       },
       animation: {
+        move: 'move 3s linear infinite',
         star: 'star 150s linear infinite',
         starReverse: 'star_r 150s linear infinite'
       }

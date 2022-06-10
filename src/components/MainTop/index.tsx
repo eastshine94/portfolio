@@ -26,8 +26,8 @@ export default function MainTop() {
             </p>
             <p className="text-3xl mb-6 over480px:text-4xl"> 김 희 동 </p>
             <button
-              className="px-4 py-2 bg-neutral-900 border border-stone-800 
-            rounded-xl over360px:text-2xl"
+              className="animate-move px-4 py-2 bg-neutral-900 border border-stone-800 
+            rounded-xl hover:animate-none over360px:text-2xl"
               onClick={handleMoreBtnClick}
             >
               Who am I?

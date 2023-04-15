@@ -1,19 +1,29 @@
-import React from 'react';
-import Title from '../Base/Title';
-import CareerItem from './CareerItem';
-import Joara from './Joara';
-import joaraLogo from 'assets/joara.png';
+import React from "react";
+import Title from "../Base/Title";
+import CareerItem from "./CareerItem";
+import Joara from "./Joara";
+import Uplus from "./Uplus";
+import joaraLogo from "assets/joara.png";
+import uplusLogo from "assets/uplus.png";
 
 export default function Career() {
   const careerList = [
     {
-      company: '(주) 조아라',
-      period: ['20201216', undefined],
-      job: '서비스개발팀 프론트엔드 개발자',
+      company: "LG U+",
+      period: ["20220823", undefined],
+      job: "라이프개발팀 프론트엔드 개발자",
+      logo: uplusLogo,
+      link: "https://www.joara.com/",
+      Content: Uplus,
+    },
+    {
+      company: "(주) 조아라",
+      period: ["20201216", "20220819"],
+      job: "서비스개발팀 프론트엔드 개발자",
       logo: joaraLogo,
-      link: 'https://www.joara.com/',
-      Content: Joara
-    }
+      link: "https://www.joara.com/",
+      Content: Joara,
+    },
   ];
 
   return (
@@ -23,7 +33,7 @@ export default function Career() {
        over800px:p-20 over800px:pt-24"
     >
       <Title title="Career" />
-      {careerList.map(value => (
+      {careerList.map((value) => (
         <CareerItem {...value} key={value.company} />
       ))}
     </section>
